@@ -14,32 +14,32 @@ namespace Testing
             three = new Program();
         }
         [TestMethod]
-        public void TestingFirstValue()
+        public void TestingFirstString()
         {
-            int first = 70, second = 35, third = 67;
-            int expected = first;
+            string first = "Peach", second = "Apple", third = "Banana";
+            string expected = first;
 
-            int actual = three.FindMaximum(first, second, third);
+            string actual = three.FindMaximumString(first, second, third);
 
             Assert.AreEqual(expected, actual);
         }
         [TestMethod]
-        public void TestingSecondValue()
+        public void TestingSecondString()
         {
-            int first = 15, second = 20, third = 17;
-            int expected = second;
+            string first = "Banana", second = "Peach", third = "Apple";
+            string expected = second;
 
-            int actual = three.FindMaximum(first, second, third);
+            string actual = three.FindMaximumString(first, second, third);
 
             Assert.AreEqual(expected, actual);
         }
         [TestMethod]
-        public void TestingThirdValue()
+        public void TestingThirdString()
         {
-            int first = 30, second = 60, third = 90;
-            int expected = third;
+            string first = "Banana", second = "Apple", third = "Peach";
+            string expected = third;
 
-            int actual = three.FindMaximum(first, second, third);
+            string actual = three.FindMaximumString(first, second, third);
 
             Assert.AreEqual(expected, actual);
         }

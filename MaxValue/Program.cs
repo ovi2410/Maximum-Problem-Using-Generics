@@ -1,15 +1,13 @@
-﻿// See https://aka.ms/new-console-template for more information
-//Console.WriteLine("Hello, World!");
-using System;
-
-namespace FindMaxValue
+﻿namespace FindMaxValue
 {
 
 
 
     public class Program
     {
-        public int FindMaximum(int first, int second, int third)
+
+
+        public string FindMaximumString(string first, string second, string third)
         {
             if (first.CompareTo(second) > 0 && first.CompareTo(third) > 0)
             {
@@ -26,7 +24,7 @@ namespace FindMaxValue
             else
             {
                 Console.WriteLine("All three having same number");
-                return -1;
+                return default;
             }
         }
 
@@ -35,12 +33,17 @@ namespace FindMaxValue
         static void Main(string[] args)
         {
             Program obj = new Program();
-            int maxValue = obj.FindMaximum(70, 35, 56);
-            Console.WriteLine(maxValue);
+            Console.WriteLine("Maximum value is : " + obj.FindMaximumString("Apple", "Banana", "Peach"));
+
             Console.ReadLine();
         }
 
-        
+
     }
+
+
+
+
+
 
 }
